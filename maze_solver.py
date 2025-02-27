@@ -145,7 +145,7 @@ def astar(grid, start, end):
     openSet = [(0, start)]
     cameFrom = {}
     gScore = {start: 0} # cost from start to this node, starts at 0
-    fScore = {start: manhattan(start, end)} #estimated total cost through this node manhatten huerisitci because we are not using diagonals ROHIT MAKE SURE TO USE UACLIDIDIAN IF YOU SWITCH TO DIAGONALS
+    fScore = {start: manhattan(start, end)} #estimated total cost through this node manhatten huerisitci because we are not using diagonals MAKE SURE TO USE UACLIDIDIAN IF YOU SWITCH TO DIAGONALS
 
     while openSet: # run while nodes exist
         openSet.sort()  # sort by fscore
